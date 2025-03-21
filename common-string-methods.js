@@ -69,23 +69,23 @@ Complete the following tasks and assign the results to the specified variables. 
 let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
 // 1. Searching
-let hasJavaScript; // Your code here
-let codingPosition; // Your code here
-let startsWithWelcome; // Your code here
-let endsWithToday; // Your code here
+let hasJavaScript = inputString.includes("JavaScript"); // check if inputSring includes "JavaScript"
+let codingPosition = inputString.indexOf("Coding"); // Find the position of the word "Coding" in the string using indexOf
+let startsWithWelcome = inputString.startsWith("Welcome"); // Check if the string starts with "Welcome"
+let endsWithToday = inputString.endsWith("today."); // Check if the string ends with "today."
 
 // 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
-let replacedString; // Your code here
+let lowercaseString = inputString.toLocaleLowerCase(); // Convert the string to all lowercase letters using toLowerCase
+let uppercaseString = inputString.toLocaleUpperCase(); // . Convert the string to all uppercase letters using toUpperCase 
+let trimmedString = inputString.trim(); // Remove the extra spaces from the beginning and end of the string using
+let replacedString = inputString.replace("JavaScript", "coding"); // Replace the word "JavaScript" with "coding"
 
 // 3. Breaking Apart
-let wordsArray; // Your code here
+let wordsArray = inputString.split(" "); // Split the string into an array of words using split with a space (" ") as the delimiter
 
 // 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+let firstCharacter = trimmedString.charAt(0); // Retrieve the first character of the trimmed string using charAt
+let extractedBootcamp = inputString.slice(24,32); // Extract the word "Bootcamp" from the string using slice
 
 // Log all results
 console.log({
